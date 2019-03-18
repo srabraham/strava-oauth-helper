@@ -1,14 +1,14 @@
 # strava-oauth-helper
 
-A package that helps in doing local OAuth2 setup for Golang clients for Strava's API.
+A package that helps in doing local OAuth2 setup for Golang clients of Strava's API.
 
-Much of the code is borrowed from Google's example Go OAuth2 code. It's nice because
+Much of the code is borrowed from Google's example Go OAuth2 code. I like that code because
 it saves your OAuth2 tokens locally for future runs.
 
-This may be of use if you just want to use the Strava APIs to interact with your own
-profile, since this just runs a local server to do the OAuth2 callback workflow.
+This package may be useful if you just want to use the Strava APIs to interact with your
+own profile, since this just runs a local server to do the OAuth2 callback workflow.
 
-e.g.
+Here's an example program that uses this package:
 
 ```golang
 package main
