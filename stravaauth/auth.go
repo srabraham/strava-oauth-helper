@@ -34,14 +34,13 @@ var (
 	tokenFilePrefix = "strava-auth-tok"
 )
 
-// GetOAuth2Ctx returns an authenticated Context that can be used to call the Strava
-// API.
+// GetOAuth2Ctx returns an authenticated Context that can be used to call the Strava API.
 //
 // e.g. client.AthletesApi.GetLoggedInAthlete(contextReturnedByThisMethod)
 //
-// The oauth2ContextType should be "strava.ContextOAuth2", using your Swagger-generated
-// "strava" package. Having this passed in avoids this package from needing to depend on
-// the Swagger-generated Strava API code directly.
+// The oauth2ContextType should be "strava.ContextOAuth2", using your Swagger-generated "strava" package.
+// Having this passed in avoids this stravaauth package from needing to depend on the Swagger-generated
+// Strava API code directly.
 func GetOAuth2Ctx(parentCtx context.Context, oauth2ContextType fmt.Stringer, scopes []string) (context.Context, error) {
 	if !flag.Parsed() {
 		return nil, errors.New("Must call Flag.Parse() before GetOAuth2Ctx()")
