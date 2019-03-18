@@ -22,7 +22,7 @@ import (
 
 	"github.com/srabraham/strava-oauth-helper/stravaauth"
 
-  // Use your choice of repo with Swagger-generated Strava API Golang client code
+	// Use your choice of repo with Swagger-generated Strava API Golang client code
 	strava "github.com/srabraham/swagger-strava-go"
 )
 
