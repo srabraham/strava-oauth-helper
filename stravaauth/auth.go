@@ -28,7 +28,7 @@ var (
 	secret     = flag.String("strava-secret", "", "OAuth 2.0 Client Secret.  If non-empty, overrides --secret_file")
 	secretFile = flag.String("strava-secret-file", "clientsecret.dat",
 		"Name of a file containing just the project's OAuth 2.0 Client Secret.")
-	cacheToken = flag.Bool("cachetoken", true, "cache the OAuth 2.0 token")
+	cacheToken = flag.Bool("strava-cachetoken", true, "cache the OAuth 2.0 token")
 
 	tokenFilePrefix = "strava-auth-tok"
 )
