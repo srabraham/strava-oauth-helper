@@ -1,3 +1,5 @@
-module github.com/srabraham/strava-oauth-helper
+module go.seanabraham.com/strava-oauth-helper
 
-require golang.org/x/oauth2 v0.0.0-20190226205417-e64efc72b421
+go 1.27.1
+
+require golang.org/x/oauth2 v0.37.0
